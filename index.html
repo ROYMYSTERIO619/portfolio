@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deepta Roy's Personal Portfolio Website">
+    <meta name="keywords" content="Portfolio, Developer, CSE Student, Deepta Roy">
+    <meta name="author" content="Deepta Roy">
+    <title>Deepta Roy | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home"></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#blogs" class="nav-link">Blogs</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#tools" class="nav-link">Tools</a></li>
+                    <li><a href="#arcade" class="nav-link">Arcade</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#activities" class="nav-link">Activities</a></li>
+                    <li><a href="#recommendations" class="nav-link">Recommendations</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="theme-toggle">
+                <button id="themeToggle" aria-label="Toggle dark/light mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="canvas-background">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <p class="intro">Hi, my name is</p>
+            <h1 class="name">Deepta Roy</h1>
+            <h2 class="title">I'm a <span id="typewriter" class="typewriter"></span></h2>
+            <p class="description">B.Tech CSE Student passionate about programming, problem-solving, and technology.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+            <div class="scroll-down" onclick="scrollToSection('about')">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <!-- Profile image -->
+                        <div class="profile-image floating-slow">
+                            <img src="image1.jpg" alt="Profile Photo" class="actual-profile-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm deeply interested in software development, algorithm design, and creating efficient solutions to complex problems. My academic journey has equipped me with strong analytical skills and a solid foundation in programming languages.
+                    </p>
+                    <p>
+                        Beyond coding, I actively participate in coding competitions, contribute to open-source projects, and continuously explore new technologies to expand my skillset.
+                    </p>
+                    <a href="Deepta-resume.pdf" class="btn btn-outline download-btn" download>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-line"></div>
+
+                <div class="education-item">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12 2L1 9l11 7 11-7L12 2zm0 17.5L4.5 14H3v6h18v-6h-1.5L12 19.5zM12 13c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                        </svg>
+                    </div>
+                    <div class="education-date-badge">2023 – 2027</div>
+                    <div class="education-card">
+                        <h3 class="education-degree">B.Tech in Computer Science Engineering</h3>
+                        <p class="education-institute">Narula Institute of Technology</p>
+                        <div class="education-stats">
+                            <span class="stat-label cgpa-label">CGPA: 9.05</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M12 3L1 9l4 2.18v6.32L12 21l7-3.5V11.18L23 9 12 3zm-1 13.62V10.38L6.12 8 11 10.38v6.24zm2 0V10.38L17.88 8 13 10.38v6.24z"/>
+                        </svg>
+                    </div>
+                    <div class="education-date-badge">2022 – 2023</div>
+                    <div class="education-card">
+                        <h3 class="education-degree">Senior Secondary (PCMB)</h3>
+                        <p class="education-institute">West Bengal Council of Higher Secondary Education (WBCHSE)</p>
+                        <div class="education-stats">
+                            <span class="stat-label percentage-label">Percentage: 87.7%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+                            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                        </svg>
+                    </div>
+                    <div class="education-date-badge">2020 – 2021</div>
+                    <div class="education-card">
+                        <h3 class="education-degree">Secondary</h3>
+                        <p class="education-institute">West Bengal Board of Secondary Education (WBBSE)</p>
+                        <div class="education-stats">
+                            <span class="stat-label percentage-label">Percentage: 94.3%</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Attendance Management System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">MySQL</span>
+                                <span class="project-tag">JDBC</span>
+                            </div>
+                        </div>
+                        <span class="project-duration">4 months</span>
+                        <p class="project-description">A comprehensive system to automate and streamline attendance tracking for educational institutions. Features include student enrollment, daily attendance tracking, automated reports, and absence notifications.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm project-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm project-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">AI-based Crop Disease Prediction</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">TensorFlow</span>
+                                <span class="project-tag">Flask</span>
+                            </div>
+                        </div>
+                        <span class="project-duration">3 months</span>
+                        <p class="project-description">An AI-powered application that helps farmers identify crop diseases through image recognition. The system uses deep learning to analyze plant images and provide instant disease diagnosis and treatment recommendations.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm project-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm project-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">E-Commerce Website</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">MongoDB</span>
+                            </div>
+                        </div>
+                        <span class="project-duration">5 months</span>
+                        <p class="project-description">A full-featured e-commerce platform with product catalog, shopping cart, secure checkout, and user account management. Includes admin dashboard for inventory management, order tracking, and sales analytics.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm project-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                            <a href="#" class="btn btn-outline btn-sm project-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Accident Detection System</h3>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">OpenCV</span>
+                                <span class="project-tag">TensorFlow</span>
+                                <span class="project-tag">IoT</span>
+                            </div>
+                        </div>
+                        <span class="project-duration">6 months</span>
+                        <p class="project-description">An intelligent system that uses computer vision and machine learning to detect vehicle accidents in real-time from traffic cameras. Automatically alerts emergency services with location data and accident severity assessment.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary btn-sm project-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/ROYMYSTERIO619/algo-visualizer" class="btn btn-outline btn-sm project-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="section">
+        <div class="container">
+            <h2 class="section-title">My Blogs</h2>
+            <div class="blogs-grid">
+                <div class="blog-card">
+                    <div class="blog-card-inner">
+                        <div class="blog-card-front">
+                            <div class="blog-image"></div>
+                            <div class="blog-content">
+                                <h3>Getting Started with React</h3>
+                                <p class="blog-excerpt">A beginner's guide to setting up your first React application and understanding the core concepts.</p>
+                                <span class="blog-date">October 15, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-card-back">
+                            <div class="blog-summary">
+                                <p>Learn how to set up your development environment, create components, manage state, and build a simple React application from scratch.</p>
+                                <a href="#" class="btn btn-primary blog-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-inner">
+                        <div class="blog-card-front">
+                            <div class="blog-image blog-image-2"></div>
+                            <div class="blog-content">
+                                <h3>Data Structures: Understanding Trees</h3>
+                                <p class="blog-excerpt">A comprehensive guide to tree data structures, their types, and common operations.</p>
+                                <span class="blog-date">September 5, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-card-back">
+                            <div class="blog-summary">
+                                <p>Explore binary trees, AVL trees, B-trees, and their applications. Learn traversal algorithms and implementation techniques with practical examples.</p>
+                                <a href="#" class="btn btn-primary blog-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-card-inner">
+                        <div class="blog-card-front">
+                            <div class="blog-image blog-image-3"></div>
+                            <div class="blog-content">
+                                <h3>Building Responsive Websites</h3>
+                                <p class="blog-excerpt">Best practices for creating websites that work flawlessly across all devices and screen sizes.</p>
+                                <span class="blog-date">August 20, 2023</span>
+                            </div>
+                        </div>
+                        <div class="blog-card-back">
+                            <div class="blog-summary">
+                                <p>Learn about media queries, fluid layouts, flexible images, and modern CSS techniques to ensure your websites look great on everything from phones to large desktop monitors.</p>
+                                <a href="#" class="btn btn-primary blog-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container-new">
+                <div class="skills-categories">
+                    <div class="skills-category active" data-category="programming">
+                        <div class="skills-category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-category" data-category="frameworks">
+                        <div class="skills-category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                        </div>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skills-category" data-category="tools">
+                        <div class="skills-category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <h3>Tools & OS</h3>
+                    </div>
+                    <div class="skills-category" data-category="databases">
+                        <div class="skills-category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                </div>
+                
+                <div class="skills-content-wrapper">
+                    <div class="skills-radar-container">
+                        <div class="radar-chart-container">
+                            <canvas id="skillsRadarChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-details">
+                        <div class="skills-tab-content active" data-content="programming">
+                            <div class="skills-list">
+                                <div class="skill-chip">
+                                    <div class="skill-icon">C</div>
+                                    <span class="skill-name">C Programming</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Java</div>
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">JS</div>
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Py</div>
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">HTML</div>
+                                    <span class="skill-name">HTML</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">CSS</div>
+                                    <span class="skill-name">CSS</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-tab-content" data-content="frameworks">
+                            <div class="skills-list">
+                                <div class="skill-chip">
+                                    <div class="skill-icon">React</div>
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-level">70%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Node</div>
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Exp</div>
+                                    <span class="skill-name">Express</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Flask</div>
+                                    <span class="skill-name">Flask</span>
+                                    <span class="skill-level">65%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Boot</div>
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-tab-content" data-content="tools">
+                            <div class="skills-list">
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Git</div>
+                                    <span class="skill-name">GitHub</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Fig</div>
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">VS</div>
+                                    <span class="skill-name">VSCode</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Win</div>
+                                    <span class="skill-name">Windows</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Lin</div>
+                                    <span class="skill-name">Linux</span>
+                                    <span class="skill-level">70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-tab-content" data-content="databases">
+                            <div class="skills-list">
+                                <div class="skill-chip">
+                                    <div class="skill-icon">SQL</div>
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">MDB</div>
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">PG</div>
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-level">65%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">FB</div>
+                                    <span class="skill-name">Firebase</span>
+                                    <span class="skill-level">70%</span>
+                                </div>
+                                <div class="skill-chip">
+                                    <div class="skill-icon">Redis</div>
+                                    <span class="skill-name">Redis</span>
+                                    <span class="skill-level">60%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section">
+        <div class="container">
+            <h2 class="section-title">Interactive Tools</h2>
+            <div class="tools-description">
+                <p>Check out these interactive tools I've built using JavaScript. Feel free to use them right here on my portfolio!</p>
+            </div>
+            
+            <div class="tools-container">
+                <div class="tool-card">
+                    <h3>Scientific Calculator</h3>
+                    <div class="calculator">
+                        <div class="calculator-display">
+                            <input type="text" id="calculatorDisplay" disabled>
+                        </div>
+                        <div class="calculator-buttons">
+                            <div class="calculator-row">
+                                <button class="calc-btn calc-btn-special" onclick="calculator('clear')">C</button>
+                                <button class="calc-btn calc-btn-special" onclick="calculator('backspace')">⌫</button>
+                                <button class="calc-btn calc-btn-special" onclick="calculator('percent')">%</button>
+                                <button class="calc-btn calc-btn-operator" onclick="calculator('divide')">÷</button>
+                            </div>
+                            <div class="calculator-row">
+                                <button class="calc-btn calc-btn-func" onclick="calculator('sin')">sin</button>
+                                <button class="calc-btn" onclick="calculator('7')">7</button>
+                                <button class="calc-btn" onclick="calculator('8')">8</button>
+                                <button class="calc-btn" onclick="calculator('9')">9</button>
+                                <button class="calc-btn calc-btn-operator" onclick="calculator('multiply')">×</button>
+                            </div>
+                            <div class="calculator-row">
+                                <button class="calc-btn calc-btn-func" onclick="calculator('cos')">cos</button>
+                                <button class="calc-btn" onclick="calculator('4')">4</button>
+                                <button class="calc-btn" onclick="calculator('5')">5</button>
+                                <button class="calc-btn" onclick="calculator('6')">6</button>
+                                <button class="calc-btn calc-btn-operator" onclick="calculator('subtract')">-</button>
+                            </div>
+                            <div class="calculator-row">
+                                <button class="calc-btn calc-btn-func" onclick="calculator('tan')">tan</button>
+                                <button class="calc-btn" onclick="calculator('1')">1</button>
+                                <button class="calc-btn" onclick="calculator('2')">2</button>
+                                <button class="calc-btn" onclick="calculator('3')">3</button>
+                                <button class="calc-btn calc-btn-operator" onclick="calculator('add')">+</button>
+                            </div>
+                            <div class="calculator-row">
+                                <button class="calc-btn calc-btn-func" onclick="calculator('power')">x^y</button>
+                                <button class="calc-btn calc-btn-func" onclick="calculator('sqrt')">√</button>
+                                <button class="calc-btn" onclick="calculator('0')">0</button>
+                                <button class="calc-btn" onclick="calculator('decimal')">.</button>
+                                <button class="calc-btn calc-btn-equals" onclick="calculator('equals')">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Color Picker</h3>
+                    <div class="color-picker">
+                        <div class="color-display">
+                            <div id="colorPreview"></div>
+                            <div class="color-values">
+                                <input type="text" id="hexValue" placeholder="#RRGGBB" readonly>
+                                <input type="text" id="rgbValue" placeholder="rgb(r, g, b)" readonly>
+                            </div>
+                        </div>
+                        <div class="color-sliders">
+                            <div class="slider-group">
+                                <label for="redSlider">R</label>
+                                <input type="range" id="redSlider" min="0" max="255" value="0" class="color-slider red-slider">
+                                <span id="redValue">0</span>
+                            </div>
+                            <div class="slider-group">
+                                <label for="greenSlider">G</label>
+                                <input type="range" id="greenSlider" min="0" max="255" value="0" class="color-slider green-slider">
+                                <span id="greenValue">0</span>
+                            </div>
+                            <div class="slider-group">
+                                <label for="blueSlider">B</label>
+                                <input type="range" id="blueSlider" min="0" max="255" value="0" class="color-slider blue-slider">
+                                <span id="blueValue">0</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" id="copyColorBtn">Copy to Clipboard</button>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Weather App</h3>
+                    <div class="weather-app">
+                        <div class="weather-search">
+                            <input type="text" id="weatherLocation" placeholder="Enter city name">
+                            <button id="weatherSearchBtn" class="btn btn-primary">Search</button>
+                        </div>
+                        <div class="weather-result" id="weatherResult">
+                            <div class="weather-info">
+                                <div class="weather-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                                </div>
+                                <div class="weather-details">
+                                    <h4 id="weatherCity">City Name</h4>
+                                    <div class="weather-temp">
+                                        <span id="weatherTemp">--</span>°C
+                                    </div>
+                                    <div class="weather-description" id="weatherDesc">Weather description</div>
+                                    <div class="weather-extras">
+                                        <div>Humidity: <span id="weatherHumidity">--%</span></div>
+                                        <div>Wind: <span id="weatherWind">-- m/s</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <h3>BMI Calculator</h3>
+                    <div class="bmi-calculator">
+                        <div class="bmi-inputs">
+                            <div class="form-group">
+                                <label for="height">Height (cm)</label>
+                                <input type="number" id="bmiHeight" placeholder="Enter height" min="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="weight">Weight (kg)</label>
+                                <input type="number" id="bmiWeight" placeholder="Enter weight" min="1">
+                            </div>
+                            <button id="calculateBmiBtn" class="btn btn-primary">Calculate BMI</button>
+                        </div>
+                        <div class="bmi-result" id="bmiResult">
+                            <div class="bmi-value">BMI: <span id="bmiValue">--</span></div>
+                            <div class="bmi-category" id="bmiCategory">Category: --</div>
+                            <div class="bmi-chart">
+                                <div class="bmi-scale">
+                                    <div class="bmi-range underweight" title="Underweight: < 18.5"></div>
+                                    <div class="bmi-range normal" title="Normal: 18.5 - 24.9"></div>
+                                    <div class="bmi-range overweight" title="Overweight: 25 - 29.9"></div>
+                                    <div class="bmi-range obese" title="Obese: ≥ 30"></div>
+                                </div>
+                                <div class="bmi-marker" id="bmiMarker"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-card">
+                    <h3>Unit Converter</h3>
+                    <div class="unit-converter">
+                        <div class="converter-options">
+                            <select id="converterType" class="converter-select">
+                                <option value="length">Length</option>
+                                <option value="weight">Weight</option>
+                                <option value="temperature">Temperature</option>
+                                <option value="time">Time</option>
+                            </select>
+                        </div>
+                        <div class="converter-inputs">
+                            <div class="converter-input-group">
+                                <input type="number" id="converterInput" placeholder="Enter value">
+                                <select id="converterFromUnit" class="unit-select"></select>
+                            </div>
+                            <div class="converter-equals">=</div>
+                            <div class="converter-input-group">
+                                <input type="number" id="converterOutput" readonly>
+                                <select id="converterToUnit" class="unit-select"></select>
+                            </div>
+                        </div>
+                        <button id="convertBtn" class="btn btn-primary">Convert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arcade Section -->
+    <section id="arcade" class="section">
+        <div class="container">
+            <h2 class="section-title">Arcade Games</h2>
+            <div class="arcade-description">
+                <p>Test your skills with these JavaScript games I've developed. Have fun playing!</p>
+            </div>
+            
+            <div class="arcade-container">
+                <div class="game-card">
+                    <h3>Snake Game</h3>
+                    <div class="game-container">
+                        <canvas id="snakeCanvas" width="300" height="300"></canvas>
+                        <div class="game-controls">
+                            <div class="game-score">Score: <span id="snakeScore">0</span></div>
+                            <button class="btn btn-primary" id="startSnakeBtn">Start Game</button>
+                            <div class="game-instructions">
+                                <p>Use arrow keys to move the snake. Collect food to grow and earn points.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card">
+                    <h3>Memory Match</h3>
+                    <div class="game-container">
+                        <div id="memoryGame" class="memory-grid"></div>
+                        <div class="game-controls">
+                            <div class="game-stats">
+                                <div>Moves: <span id="moveCount">0</span></div>
+                                <div>Matches: <span id="matchCount">0</span>/<span id="totalPairs">8</span></div>
+                            </div>
+                            <button class="btn btn-primary" id="startMemoryBtn">New Game</button>
+                            <div class="game-instructions">
+                                <p>Click cards to reveal them. Match all pairs to win.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <h3>Tic Tac Toe</h3>
+                    <div class="game-container">
+                        <div id="ticTacToeBoard" class="tictactoe-board">
+                            <div class="tictactoe-cell" data-cell="0"></div>
+                            <div class="tictactoe-cell" data-cell="1"></div>
+                            <div class="tictactoe-cell" data-cell="2"></div>
+                            <div class="tictactoe-cell" data-cell="3"></div>
+                            <div class="tictactoe-cell" data-cell="4"></div>
+                            <div class="tictactoe-cell" data-cell="5"></div>
+                            <div class="tictactoe-cell" data-cell="6"></div>
+                            <div class="tictactoe-cell" data-cell="7"></div>
+                            <div class="tictactoe-cell" data-cell="8"></div>
+                        </div>
+                        <div class="game-controls">
+                            <div class="game-status" id="ticTacToeStatus">X's turn</div>
+                            <button class="btn btn-primary" id="resetTicTacToeBtn">New Game</button>
+                            <div class="game-instructions">
+                                <p>Click on a cell to place your mark. Get three in a row to win!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <h3>Rock Paper Scissors</h3>
+                    <div class="game-container">
+                        <div class="rps-game">
+                            <div class="rps-choices">
+                                <button class="rps-choice" data-choice="rock">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6l-6-3H9l1 1l-4 4l-5 6h5l2 3h10l3-7V8l-3-2z"/></svg>
+                                    <span>Rock</span>
+                                </button>
+                                <button class="rps-choice" data-choice="paper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                    <span>Paper</span>
+                                </button>
+                                <button class="rps-choice" data-choice="scissors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9h12l-5-5m5 5l-5 5M9 14l-5 5m5-5l-5-5"/></svg>
+                                    <span>Scissors</span>
+                                </button>
+                            </div>
+                            <div class="rps-result">
+                                <div class="rps-battle">
+                                    <div class="rps-player-choice" id="playerChoice">?</div>
+                                    <div class="rps-vs">VS</div>
+                                    <div class="rps-computer-choice" id="computerChoice">?</div>
+                                </div>
+                                <div class="rps-message" id="rpsMessage">Choose your weapon!</div>
+                                <div class="rps-score">
+                                    <div>You: <span id="playerScore">0</span></div>
+                                    <div>Computer: <span id="computerScore">0</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section removed as requested -->
+
+    <!-- Coding Profiles Section -->
+    <section id="coding-profiles" class="section">
+        <div class="container">
+            <h2 class="section-title">Coding Profiles</h2>
+            <div class="coding-profiles-container">
+                <div class="coding-profile-card leetcode">
+                    <div class="coding-profile-header">
+                        <div class="coding-profile-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 0 0-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zm4.709-4.92H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z"/>
+                            </svg>
+                        </div>
+                        <h3 class="coding-profile-title">LeetCode</h3>
+                    </div>
+                    <div class="coding-profile-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">170+</div>
+                            <div class="stat-label">Problems Solved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">128</div>
+                            <div class="stat-label">Contest Rating</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">Top 15%</div>
+                            <div class="stat-label">Global Ranking</div>
+                        </div>
+                    </div>
+                    <div class="difficulty-distribution">
+                        <div class="difficulty-item">
+                            <span class="difficulty-label">Easy</span>
+                            <div class="difficulty-bar">
+                                <div class="difficulty-fill easy" style="width: 85%"></div>
+                            </div>
+                            <span class="difficulty-percentage">85%</span>
+                        </div>
+                        <div class="difficulty-item">
+                            <span class="difficulty-label">Medium</span>
+                            <div class="difficulty-bar">
+                                <div class="difficulty-fill medium" style="width: 60%"></div>
+                            </div>
+                            <span class="difficulty-percentage">60%</span>
+                        </div>
+                        <div class="difficulty-item">
+                            <span class="difficulty-label">Hard</span>
+                            <div class="difficulty-bar">
+                                <div class="difficulty-fill hard" style="width: 35%"></div>
+                            </div>
+                            <span class="difficulty-percentage">35%</span>
+                        </div>
+                    </div>
+                    <a href="https://leetcode.com/u/ROYMYSTERIO619/" target="_blank" class="btn btn-primary coding-profile-btn">View Profile</a>
+                </div>
+                
+                <div class="coding-profile-card gfg">
+                    <div class="coding-profile-header">
+                        <div class="coding-profile-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.9347 15.1621C20.6588 15.8622 20.0825 16.4029 19.3542 16.616C18.4032 16.8906 17.4031 17.0136 16.4016 17.0136H14.8451V19.4972H11.689V12.9556H16.4016C16.7821 12.9556 17.1625 12.9322 17.5422 12.9024C18.1285 12.8677 18.6813 12.6513 19.101 12.268C19.5206 11.8839 19.7852 11.3642 19.8459 10.7989C19.9713 9.55342 19.9713 8.29885 19.8459 7.05246C19.7859 6.49406 19.5411 5.97707 19.1301 5.57301C18.715 5.16811 18.1563 4.94074 17.5749 4.92557C17.1995 4.89844 16.8234 4.88306 16.4473 4.87935H15.3275C14.5347 4.90594 13.7547 4.71541 13.0812 4.31521C12.4076 3.91586 11.8716 3.32592 11.545 2.62394C11.0768 1.54492 11.0768 0.315842 11.545 -0.763184H11.9547C12.5491 -0.763184 13.041 -0.271408 13.041 0.323097V1.87189C13.041 2.19174 13.1677 2.49799 13.3939 2.7243C13.6202 2.9506 13.9264 3.0773 14.2462 3.0773H16.4473C17.8971 3.0773 19.3262 3.28224 20.6693 3.82153C21.5297 4.17736 22.228 4.85426 22.6267 5.70551C23.0253 6.55676 23.0932 7.52368 22.817 8.42365C22.6336 9.0054 22.2983 9.52734 21.8457 9.93719C21.3932 10.347 20.8396 10.6283 20.2438 10.746C21.0792 10.9991 21.7955 11.5525 22.2411 12.2975C22.6867 13.0425 22.826 13.9258 22.6316 14.7662C22.5054 14.9158 22.6986 15.1373 20.9347 15.1621ZM8.82896 12.9556H4.1164C3.73595 12.9556 3.35551 12.9786 2.97676 13.0084C2.39045 13.043 1.83753 13.2595 1.41788 13.6429C0.999451 14.027 0.733401 14.5467 0.673489 15.112C0.548138 16.3575 0.548138 17.6121 0.673489 18.8584C0.734302 19.4168 0.979172 19.9339 1.39005 20.3379C1.80517 20.7427 2.36395 20.9701 2.94529 20.9853C3.32075 21.0124 3.69679 21.0278 4.07284 21.0315H5.19182C5.98455 21.005 6.76447 21.1955 7.43797 21.5957C8.1123 21.995 8.64911 22.5849 8.97496 23.2877C9.44308 24.3668 9.44308 25.5958 8.97496 26.6748H8.56533C7.9709 26.6748 7.47894 26.183 7.47894 25.5885V24.0398C7.47894 23.7199 7.3523 23.4137 7.12599 23.1874C6.89969 22.9611 6.59344 22.8344 6.27358 22.8344H4.07284C2.62302 22.8344 1.19393 22.6294 -0.149232 22.0901C-1.00962 21.7343 -1.70795 21.0574 -2.10668 20.2062C-2.50532 19.3549 -2.57315 18.388 -2.29707 17.488C-2.11359 16.9063 -1.77831 16.3843 -1.32573 15.9745C-0.873253 15.5646 -0.319616 15.2833 0.276269 15.1656C-0.559147 14.9125 -1.27544 14.3591 -1.72113 13.6142C-2.16672 12.8691 -2.30599 11.9858 -2.11165 11.1454C-1.98539 10.9958 -2.17949 10.7743 -0.415566 10.7496C-0.139693 10.0494 0.43661 9.50863 1.16481 9.29557C2.11581 9.02101 3.11589 8.89796 4.1164 8.89796H8.82896V12.9556ZM1.70374 8.42025C1.40108 8.42025 1.15487 8.17413 1.15487 7.87148V6.54598C1.15487 6.24332 1.40108 5.99721 1.70374 5.99721H9.37783C9.6805 5.99721 9.9267 6.24332 9.9267 6.54598V7.87148C9.9267 8.17413 9.6805 8.42025 9.37783 8.42025H1.70374ZM0 2.03998C0 1.58375 0.369372 1.21439 0.825608 1.21439H10.2558C10.7121 1.21439 11.0815 1.58375 11.0815 2.03998V3.06564C11.0815 3.52187 10.7121 3.89124 10.2558 3.89124H0.825608C0.369372 3.89124 0 3.52187 0 3.06564V2.03998Z" transform="translate(0.5 12)" style="transform-origin: center; transform: scale(0.75);"/>
+                            </svg>
+                        </div>
+                        <h3 class="coding-profile-title">GeeksForGeeks</h3>
+                    </div>
+                    <div class="coding-profile-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">150+</div>
+                            <div class="stat-label">Problems Solved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">Institute Rank 189</div>
+                            <div class="stat-label">Ranking</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">400+</div>
+                            <div class="stat-label">Geek Coins</div>
+                        </div>
+                    </div>
+                    <div class="coding-streak">
+                        <div class="streak-label">Current Streak</div>
+                        <div class="streak-days">
+                            <div class="streak-day active"></div>
+                            <div class="streak-day active"></div>
+                            <div class="streak-day active"></div>
+                            <div class="streak-day active"></div>
+                            <div class="streak-day active"></div>
+                            <div class="streak-day"></div>
+                            <div class="streak-day"></div>
+                        </div>
+                        <div class="streak-count">5 days</div>
+                    </div>
+                    <a href="https://auth.geeksforgeeks.org/user/deeptaroy619" target="_blank" class="btn btn-primary coding-profile-btn">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-inner">
+                        <div class="certification-front">
+                            <h3>Java Programming</h3>
+                            <span>Coursera</span>
+                            <button class="flip-btn" aria-label="Flip card">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                        <div class="certification-back">
+                            <p>Completed advanced Java programming course covering core concepts, data structures, and object-oriented programming principles.</p>
+                            <span>Issued: June 2023</span>
+                            <button class="reset-flip-btn" aria-label="Flip back">
+                                <i class="fas fa-undo"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-inner">
+                        <div class="certification-front">
+                            <h3>Web Development</h3>
+                            <span>Udemy</span>
+                            <button class="flip-btn" aria-label="Flip card">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                        <div class="certification-back">
+                            <p>Comprehensive web development bootcamp covering HTML, CSS, JavaScript, and responsive design principles.</p>
+                            <span>Issued: March 2023</span>
+                            <button class="reset-flip-btn" aria-label="Flip back">
+                                <i class="fas fa-undo"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-inner">
+                        <div class="certification-front">
+                            <h3>Data Structures</h3>
+                            <span>GeeksforGeeks</span>
+                            <button class="flip-btn" aria-label="Flip card">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                        </div>
+                        <div class="certification-back">
+                            <p>In-depth course on various data structures including arrays, linked lists, trees, graphs, and their applications.</p>
+                            <span>Issued: January 2023</span>
+                            <button class="reset-flip-btn" aria-label="Flip back">
+                                <i class="fas fa-undo"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://example.com/database-cert" target="_blank" class="certification-link-card" style="text-decoration: none; color: inherit;">
+                    <div class="certification-card">
+                        <div class="certification-inner">
+                            <div class="certification-front">
+                                <h3>Database Management</h3>
+                                <span>Microsoft Learn</span>
+                                <button class="flip-btn" aria-label="Flip card">
+                                    <i class="fas fa-sync-alt"></i>
+                                </button>
+                            </div>
+                            <div class="certification-back">
+                                <p>Comprehensive course on database design, SQL, normalization, and database management principles.</p>
+                                <span>Issued: August 2022</span>
+                                <button class="reset-flip-btn" aria-label="Flip back">
+                                    <i class="fas fa-undo"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+                            <path d="M1 7h4"></path>
+                            <path d="M19 7h4"></path>
+                            <path d="M8 5h8"></path>
+                            <path d="M5 19h14"></path>
+                        </svg>
+                    </div>
+                    <div class="achievement-count">
+                        <span class="counter" data-target="150">0</span>
+                        <span>+</span>
+                    </div>
+                    <h3>Coding Problems Solved</h3>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
+                        </svg>
+                    </div>
+                    <div class="achievement-count">
+                        <span class="counter" data-target="10">0</span>
+                        <span>+</span>
+                    </div>
+                    <h3>Certifications Achieved</h3>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <div class="achievement-count">
+                        <span class="counter" data-target="15">0</span>
+                        <span>+</span>
+                    </div>
+                    <h3>Events Participated</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="testimonials-description">
+                <p>Feedback from colleagues, mentors, and project partners who I've had the pleasure of working with.</p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-controls">
+                    <button id="prevTestimonial" class="testimonial-nav-btn">&larr;</button>
+                </div>
+                
+                <div class="testimonials-carousel">
+                    <div class="testimonial-card active" data-index="0">
+                        <div class="testimonial-text">
+                            <p>"An exceptional developer with a keen eye for detail. Their problem-solving abilities and dedication to clean, efficient code make them a valuable asset to any team."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <span>SK</span>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Sarah Kim</h4>
+                                <span>Senior Developer, Tech Solutions Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-index="1">
+                        <div class="testimonial-text">
+                            <p>"I had the pleasure of mentoring this developer during our internship program. Their quick learning ability and creative approach to technical challenges impressed everyone on the team."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <span>RM</span>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Robert Martinez</h4>
+                                <span>Project Manager, Innovation Labs</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-index="2">
+                        <div class="testimonial-text">
+                            <p>"Working together on our university project was a fantastic experience. Their technical skills combined with excellent communication made our collaboration seamless and highly productive."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <span>AP</span>
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Anjali Patel</h4>
+                                <span>UX Designer, Creative Digital</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button id="nextTestimonial" class="testimonial-nav-btn">&rarr;</button>
+                </div>
+            </div>
+            
+            <div class="testimonial-indicators">
+                <span class="testimonial-dot active" data-index="0"></span>
+                <span class="testimonial-dot" data-index="1"></span>
+                <span class="testimonial-dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurricular Activities Section -->
+    <section id="activities" class="section">
+        <div class="container">
+            <h2 class="section-title">Extracurricular Activities</h2>
+            <div class="activities-accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>National Service Scheme (NSS)</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Active member of NSS since 2021. Participated in various community service activities including:</p>
+                        <ul>
+                            <li>Tree plantation drives</li>
+                            <li>Blood donation camps</li>
+                            <li>Digital literacy programs for underprivileged communities</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Coding Club</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Core member of the college coding club. Responsibilities include:</p>
+                        <ul>
+                            <li>Organizing weekly coding challenges</li>
+                            <li>Conducting workshops on emerging technologies</li>
+                            <li>Mentoring junior students in programming concepts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Hackathons & Competitions</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Regular participant in various hackathons and coding competitions:</p>
+                        <ul>
+                            <li>Smart India Hackathon 2022 - Finalist</li>
+                            <li>CodeFest 2023 - 2nd Prize</li>
+                            <li>Inter-college Algorithm Challenge - Top 10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Phone</h3>
+                            <p>+91-9088211570</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Email</h3>
+                            <p>deeptaroy619@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ROYMYSTERIO619" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/deepta-roy-2601852a1/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Removed newsletter section -->
+                <div class="footer-info" style="text-align: center; width: 100%;">
+                    <p style="margin: 0 auto;">&copy; 2025 Deepta Roy. All Rights Reserved.</p>
+                    <div class="theme-toggle-container">
+                        <span>Theme:</span>
+                        <button id="themeToggle" aria-label="Toggle theme">
+                            <span class="theme-icon light-icon">☀️</span>
+                            <span class="theme-icon dark-icon">🌙</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chart.js for radar chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Main Scripts -->
+    <script src="script.js"></script>
+    <script src="radar-chart.js"></script>
+
+    <!-- Chat Bubble -->
+    <div class="chat-bubble-container">
+        <button class="chat-bubble-btn" id="chatBubbleBtn">
+            <div class="chat-bubble-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+            </div>
+        </button>
+        <div class="chat-overlay" id="chatOverlay">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-profile">
+                        <img src="image2.jpg" alt="Profile" class="chat-profile-img">
+                        <div class="chat-profile-info">
+                            <h3>Deepta Roy</h3>
+                            <span class="chat-status">Online</span>
+                        </div>
+                    </div>
+                    <button id="chatCloseBtn" class="chat-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Messages will be added here dynamically -->
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" class="chat-input" placeholder="Type your message...">
+                    <button id="chatSendBtn" class="chat-send-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
